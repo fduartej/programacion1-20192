@@ -9,6 +9,8 @@ namespace dotnet_web.controllers
 
         [HttpPost]
         public IActionResult RegistrarFan(Follower follow){
+
+            int age =DateTime.Now.Year - follow.Birth.Year;
             return View("myview");
         }
     }
