@@ -7,6 +7,10 @@ namespace dotnet_web.controllers
 
     public class HomeController:Controller{
 
+        public IActionResult Index(){
+            return View();
+        }
+        
         [HttpPost]
         public IActionResult RegistrarFan(Follower follow){
             int age =DateTime.Now.Year - follow.Birth.Year;
