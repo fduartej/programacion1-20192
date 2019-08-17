@@ -19,3 +19,14 @@ dotnet-web/obj/Debug/netcoreapp2.1/dotnet-web.RazorAssemblyInfo.cache
 dotnet-web/obj/Debug/netcoreapp2.1/dotnet-web.RazorAssemblyInfo.cs
 dotnet-web/obj/Debug/netcoreapp2.1/dotnet-web.RazorTargetAssemblyInfo.cache
 dotnet-web/obj/Debug/netcoreapp2.1/project.razor.json
+dotnet-web/obj/Debug/netcoreapp2.1/dotnet-web.RazorCoreGenerate.cache
+dotnet-web/bin/Debug/netcoreapp2.1/dotnet-web.Views.dll
+dotnet-web/bin/Debug/netcoreapp2.1/dotnet-web.Views.pdb
+dotnet-web/obj/Debug/netcoreapp2.1/dotnet-web.csproj.CopyComplete
+dotnet-web/obj/Debug/netcoreapp2.1/dotnet-web.RazorTargetAssemblyInfo.cs
+dotnet-web/obj/Debug/netcoreapp2.1/dotnet-web.TagHelpers.input.cache
+dotnet-web/obj/Debug/netcoreapp2.1/dotnet-web.TagHelpers.output.cache
+dotnet-web/obj/Debug/netcoreapp2.1/dotnet-web.Views.dll
+dotnet-web/obj/Debug/netcoreapp2.1/dotnet-web.Views.pdb
+dotnet-web/obj/Debug/netcoreapp2.1/Razor/Views/Index.g.cshtml.cs
+dotnet-web/obj/Debug/netcoreapp2.1/Razor/Views/Myview.g.cshtml.cs
