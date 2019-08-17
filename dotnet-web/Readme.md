@@ -6,16 +6,16 @@ Principales pasos
 
 2. Entrar con terminal y ejecutar el siguiente comando
 
-´´´dotnet new web´´´
+`dotnet new web`
 
 3. Compilar 
 
-´´´dotnet build´´´
+`dotnet build`
 
 4. Ejecutar
 
-´´´dotnet run´´´
+`dotnet run`
 
 5. Probar en 
 
-´´´http://localhost:5000´´´
+`http://localhost:5000`
