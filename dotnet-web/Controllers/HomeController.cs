@@ -7,17 +7,19 @@ namespace dotnet_web.controllers
 
     public class HomeController:Controller{
 
-        [Route("")]
-        [Route("Home")]
-        [Route("Home/Index")]
+
         public IActionResult Index(){
+            Console.WriteLine("Index");
             return View();
         }
         
-        [HttpPost("/RegistrarFan")]
+        // POST: Home/RegistrarFan
+        [HttpPost]
         public IActionResult RegistrarFan(Follower follow){
+            Console.WriteLine("RegistrarFan");
             int age =DateTime.Now.Year - follow.Birth.Year;
-            return View("Myview");
+            follow.Age = age;
+            return View(follow);
         }
     }
 
