@@ -19,3 +19,10 @@ Principales pasos
 5. Probar en 
 
 `http://localhost:5000`
+
+
+6. Opcional clean y restore cuando cargamos el proyecto
+
+`dotnet clean`
+
+`dotnet run`

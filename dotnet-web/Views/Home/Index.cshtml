@@ -14,6 +14,16 @@
             <input asp-for="Name"/><br/>
             <label>Correo</label>
             <input asp-for="Email"/><br/>
+            <label>Estado Civil</label>
+            <select asp-for="MarriedStatus">
+                <option value="single">Soltero</option>
+                <option value="married">Casado</option>
+                <option value="divorced">Divorciado</option>
+                <option value="complicated">Complicado</option>
+            </select><br/>
+            <label>Genero</label>
+            <input type="radio" asp-for="Gender" value="masculino"/>Masculino
+            <input type="radio" asp-for="Gender" value="femenino"/>Femenino<br/>
             <label>Fecha Nacimiento</label>
             <input asp-for="Birth"/><br/>
             <input type="submit" value="Registrate"/>
