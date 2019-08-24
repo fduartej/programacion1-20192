@@ -18,6 +18,8 @@ namespace dotnet_web.controllers
         public IActionResult RegistrarFan(Follower follow){
             Console.WriteLine("RegistrarFan");
             int age =DateTime.Now.Year - follow.Birth.Year;
+            Random  rnd = new Random();
+            int numero = rnd.Next();
             follow.Age = age;
             return View(follow);
         }
