@@ -30,6 +30,7 @@ namespace dotnet_web.controllers
             follow.Age = age;
 
             _context.Add(follow);
+            _context.SaveChanges();
 
             return View(follow);
         }
