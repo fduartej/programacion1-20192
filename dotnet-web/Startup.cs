@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using dotnet_web.models;
+using Microsoft.EntityFrameworkCore;
 
 namespace dotnet_web
 {
@@ -16,6 +18,14 @@ namespace dotnet_web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddDbContext<DatabaseContext>(options =>
+                  
+                    options.UseNpgsql(
+            "Host=ec2-54-83-9-36.compute-1.amazonaws.com;" +
+            "Database=d76dvfemdvq3b4;Username=tthuzzuumpwkry;"+
+            "Password=2b01c50438365ab95cc5496c0c580a594865bb02ede03ace69e9d263081aa2f0;"+
+            "Port=5432")
+                  ); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
