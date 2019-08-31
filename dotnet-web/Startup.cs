@@ -24,7 +24,7 @@ namespace dotnet_web
             "Host=ec2-54-83-9-36.compute-1.amazonaws.com;" +
             "Database=d76dvfemdvq3b4;Username=tthuzzuumpwkry;"+
             "Password=2b01c50438365ab95cc5496c0c580a594865bb02ede03ace69e9d263081aa2f0;"+
-            "Port=5432")
+            "Port=5432;SSL Mode=Require;Trust Server Certificate=true")
                   ); 
         }
 
