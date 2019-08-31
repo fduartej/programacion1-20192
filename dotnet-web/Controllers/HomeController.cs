@@ -7,6 +7,13 @@ namespace dotnet_web.controllers
 
     public class HomeController:Controller{
 
+        private readonly DatabaseContext _context;
+
+        public HomeController(DatabaseContext context)
+        {
+            _context = context;
+        }
+
 
         public IActionResult Index(){
             Console.WriteLine("Index");
@@ -21,6 +28,9 @@ namespace dotnet_web.controllers
             Random  rnd = new Random();
             int numero = rnd.Next();
             follow.Age = age;
+
+            _context.Add(follow);
+
             return View(follow);
         }
     }
