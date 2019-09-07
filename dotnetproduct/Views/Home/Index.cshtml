@@ -1,0 +1,31 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model dotnetproduct.models.Product
+
+<!DOCTYPE html>
+<html>
+    <title>Dora App</title>
+<body>
+    <h1>Bienvenido a Product</h1><br>
+   
+    <div>
+        <form asp-controller="Home" asp-action="RegistrarProduct">
+            <label>Es un Fun</label><br/>
+            <label>Name</label>
+            <input asp-for="Name"/><br/>
+            <label>Categoria</label>
+            <select asp-for="Category">
+                <option value="cat1">Categoria1</option>
+                <option value="cat2">Categoria2</option>
+            </select><br/>
+            <label>Produccion</label>
+            <input type="radio" asp-for="Production" value="nacional"/>Nacional
+            <input type="radio" asp-for="Production" value="extranjera"/>Extrangero<br/>
+            <label>Precio</label>
+            <input asp-for="Price"/><br/>
+            <input type="submit" value="Registrate"/>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

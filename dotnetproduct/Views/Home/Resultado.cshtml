@@ -1,0 +1,11 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model dotnetproduct.models.Product
+<!DOCTYPE html>
+<html>
+    <title>Product App</title>
+<body>
+    <h1>La respuesta 
+        @Html.DisplayTextFor(model => model.Name)
+    </h1><br>
+</body>
+</html>
