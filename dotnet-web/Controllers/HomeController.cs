@@ -2,6 +2,8 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using dotnet_web.models;
 
+using System.Linq;
+
 namespace dotnet_web.controllers
 {
 
@@ -16,10 +18,13 @@ namespace dotnet_web.controllers
 
 
         public IActionResult Index(){
-            Console.WriteLine("Index");
-            return View();
+            return View(_context.Followers.ToList());
         }
         
+        public IActionResult Create(){
+            return View();
+        }
+
         // POST: Home/RegistrarFan
         [HttpPost]
         public IActionResult RegistrarFan(Follower follow){
