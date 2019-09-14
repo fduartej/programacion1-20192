@@ -25,6 +25,23 @@ namespace dotnet_web.controllers
             return View();
         }
 
+        public IActionResult Details(int? id){
+
+           if (id == null)
+            {
+                return NotFound();
+            }
+
+            var follower = _context.Followers
+                .SingleOrDefault(m => m.ID == id);
+            if (follower == null)
+            {
+                return NotFound();
+            }
+
+            return View(follower);
+        }
+
         // POST: Home/RegistrarFan
         [HttpPost]
         public IActionResult RegistrarFan(Follower follow){
